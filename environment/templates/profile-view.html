@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Public Profile</title>
+</head>
+<link rel="stylesheet" href="{{ url_for('static', filename='stl.css') }}">
+<body>
+  <h2>Student Profile</h2>
+  {% if user_profile %}
+  <p>Name: {{ user_profile.name }}</p>
+  <p>Registration Number: {{ user_profile.registration_number }}</p>
+  <p>Email: {{ user_profile.email }}</p>
+  <p>Degree Program: {{ user_profile.degree_program }}</p>
+  <p>Contact Number: {{ user_profile.contact_number }}</p>
+  <p>Introduction: {{ user_profile.introduction }}</p>
+  <p>Current GPA: {{ user_profile.current_gpa }}</p>
+  <p>Skills: {{ user_profile.skills }}</p>
+  {% else %}
+  <p>User not found.</p>
+  {% endif %}
+   <button class="back-button"><a href="/">Back</a></button>
+</body>
+</html>

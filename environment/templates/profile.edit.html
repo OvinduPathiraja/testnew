@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Profile</title>
+</head>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  
+<body>
+   <button class='back-button'><a href="/">back</a></button>
+   <br>
+    <h1>Edit Profile</h1>
+    {% if msg %}
+    <p>{{ msg }}</p>
+    {% endif %}
+    <form method="POST" action="/profile/edit">
+        <label for="full-name">Full Name:</label>
+        <input type="text" id="full-name" name="full-name" value="{{ user_data['name'] }}" required>
+        <br><br>
+        <label for="registration-number">Registration Number:</label>
+        <input type="text" id="registration-number" name="registration-number" value="{{ user_data['registration_number'] }}" required>
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" value="{{ user_data['email'] }}" required>
+        <br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br><br>
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" name="confirm-password" required>
+        <br><br>
+        <label for="degree-program">Degree Program:</label>
+        <select id="degree-program" name="degree-program">
+            <option value="option1" {% if user_data['degree_program'] == 'option1' %}selected{% endif %}>Bsc Computer Science & Engineering</option>
+            <option value="option2" {% if user_data['degree_program'] == 'option2' %}selected{% endif %}>Bsc Mechanical Engineering</option>
+            <option value="option3" {% if user_data['degree_program'] == 'option3' %}selected{% endif %}>Bsc Civil Engineering</option>
+            <option value="option4" {% if user_data['degree_program'] == 'option4' %}selected{% endif %}>Bsc Electrical Engineering</option>
+        </select>
+        <br><br>
+        <label for="contact-number">Contact Number:</label>
+        <input type="text" id="contact-number" name="contact-number" value="{{ user_data['contact_number'] }}">
+        <br><br>
+        <label for="introduction">Introduction:</label>
+        <textarea id="introduction" name="introduction">{{ user_data['introduction'] }}</textarea>
+        <br><br>
+        <label for="current-gpa">Current GPA:</label>
+        <input type="text" id="current-gpa" name="current-gpa" value="{{ user_data['current_gpa'] }}">
+        <br><br>
+        <label for="skills">Skills:</label>
+        <textarea id="skills" name="skills">{{ user_data['skills'] }}</textarea>
+        <br><br>
+        <input type="submit" class='up-profile' value="Update Profile">
+        <br>
+       
+    </form>
+</body>
+</html>

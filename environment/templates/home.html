@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>EduX Technical University</title>
+  
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  
+
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-logo">
+      <a href="/">EduX Technical University</a>
+    </div>
+    <ul class="navbar-nav">
+     
+      <li><a href="programs.html">Programs</a></li>
+      <li><a href="admissions.html">Admissions</a></li>
+       <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="auth-buttons">
+      <a href="/login" class="auth-button">Login</a>
+      <a href="/signup" class="auth-button">Signup</a>
+    </div>
+  </nav>
+  <br>
+ <div class="search">
+  <form action="/profile-view" method="GET">
+    <div class="input-group">
+      <input type="text" class="input-field" name="registration_number" placeholder="Enter Registration Number" required>
+      <button class="auth-button" type="submit">View Profile</button>
+    </div>
+  </form>
+</div>
+<section class="university-section">
+  <h2>Welcome to EDUx Technical University</h2>
+  <p>EDUx Technical University is a renowned institution of higher education, committed to providing exceptional academic programs and fostering a culture of innovation and research.</p>
+  <p>At EDUx Technical University, students can explore a wide range of programs and degrees designed to meet the evolving needs of the industry. The university offers comprehensive programs in fields such as Engineering, Computer Science, Business Administration, and more.</p>
+  <p>The university takes great pride in its distinguished faculty and staff who are experts in their domains. They bring a wealth of knowledge and industry experience to the classrooms, providing students with valuable insights and mentoring.</p>
+  <p>Research and innovation are fundamental pillars of EDUx Technical University. The university encourages a vibrant research culture, fostering interdisciplinary collaborations and groundbreaking discoveries.</p>
+  <p>By choosing EDUx Technical University, students embark on a transformative educational journey, gaining not only a world-class education but also the skills and mindset to thrive in an ever-changing global landscape.</p>
+</section>
+
+
+
+ <footer>
+    <p>&copy; 2023 EDUx Technical University. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+  
+</body>
+</html>

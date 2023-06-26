@@ -1,0 +1,231 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+background-image: url('./images/signupback.jpg');
+
+
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container {
+    margin-top: 10px;
+  max-width: 450px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  background-color: #4CAF50;
+  color: #ffffff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.required:after {
+  content: "*";
+  color: red;
+}
+.container h2{
+    padding-left: 25%;
+    padding-right: 25%;
+}
+.signup-but{
+    width: 100%;
+}
+.container{
+
+  background: linear-gradient(to bottom, #A8E6CE, #D3E6F4, #F4DAD7, #F9B5AC, #F07A8D);
+
+}
+.back-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 16px;
+  background: linear-gradient(to right, #69c174, #94d587, #c0e29a);
+  border: none;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #333;
+}
+
+
+.back-button:hover {
+   background: linear-gradient(to right, #b3dbb0, #d1e8cf, #f0f7ee);
+}
+
+.login-button {
+  display: block;
+  width: 100%;
+  background-color: #4caf50;
+  color: #ffffff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.login-button:hover {
+  background-color: #45a049;
+}
+.container-1 {
+  max-width: 450px;
+  margin: 0 auto;
+  padding: 20px;
+   background: linear-gradient(to bottom, #A8E6CE, #D3E6F4, #F4DAD7, #F9B5AC, #F07A8D);
+  border-radius: 4px;
+  margin-top: 10%;
+}
+
+h2 {
+  text-align: center;
+}
+
+/*home page*/
+.navbar {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  height: 60px;
+  padding: 0 20px;
+}
+
+.navbar-logo a {
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.navbar-nav {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.navbar-nav li {
+  margin-left: 20px;
+}
+
+.navbar-nav li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar-nav li a:hover {
+  text-decoration: underline;
+}
+
+.auth-buttons {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.auth-button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.auth-button:hover {
+  background-color: #45a049;
+}
+
+/* styles.css */
+
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-group {
+  display: flex;
+  gap: 10px;
+}
+
+.input-field {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#auth-button {
+  padding: 10px 20px;
+  background-color: #2980b9;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.auth-button:hover {
+  background-color: #1a5276;
+}
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+.university-section {
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.university-section h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.university-section p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
